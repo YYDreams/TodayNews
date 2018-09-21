@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TNUserDetailController" customModule="TodayNews" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="yKM-3Y-gQO" id="uhB-us-CNc"/>
+                <outlet property="scrollView" destination="dpQ-GT-AWS" id="P4o-Dm-BZe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpQ-GT-AWS">
+                    <rect key="frame" x="0.0" y="20" width="375" height="607"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-3Y-gQO">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dpQ-GT-AWS" secondAttribute="trailing" id="2J6-HO-e9m"/>
+                <constraint firstAttribute="bottom" secondItem="yKM-3Y-gQO" secondAttribute="bottom" id="5O4-M9-txf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dpQ-GT-AWS" secondAttribute="bottom" constant="40" id="AIp-cd-bJh"/>
+                <constraint firstItem="dpQ-GT-AWS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OMs-W9-jay"/>
+                <constraint firstItem="dpQ-GT-AWS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S2U-Ab-9Sy"/>
+                <constraint firstItem="yKM-3Y-gQO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ykl-rG-w2j"/>
+                <constraint firstAttribute="trailing" secondItem="yKM-3Y-gQO" secondAttribute="trailing" id="nZy-jh-TEn"/>
+                <constraint firstItem="yKM-3Y-gQO" firstAttribute="top" secondItem="dpQ-GT-AWS" secondAttribute="bottom" id="wuh-OA-Nqp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
